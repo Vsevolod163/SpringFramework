@@ -12,7 +12,7 @@ final class ViewController: UIViewController {
     @IBOutlet var coreAnimationView: UIView!
 
     @IBAction func runCoreAnimation(_ sender: UIButton) {
-        
+        sender.pulsate()
     }
     
 }
