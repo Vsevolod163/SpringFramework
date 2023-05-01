@@ -20,8 +20,8 @@
                                 <rect key="frame" x="77" y="99" width="276" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Core Animation View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unp-Ba-krn">
-                                        <rect key="frame" x="47" y="52" width="182" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <rect key="frame" x="59.000000000000014" y="54.000000000000007" width="158.33333333333337" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -40,11 +40,11 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwf-Lr-70i">
-                                <rect key="frame" x="77" y="638.66666666666663" width="276" height="35"/>
+                                <rect key="frame" x="77" y="643.66666666666663" width="276" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Run Core Animation" cornerStyle="medium"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Run Core Animation"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="10"/>
@@ -54,13 +54,57 @@
                                     <action selector="runCoreAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="49x-VG-bu0"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJg-Zx-Rjk">
+                                <rect key="frame" x="77" y="267" width="276" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Core Animation View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhI-jx-uEv">
+                                        <rect key="frame" x="59.000000000000014" y="54.000000000000007" width="158.33333333333337" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="MhI-jx-uEv" firstAttribute="centerX" secondItem="gJg-Zx-Rjk" secondAttribute="centerX" id="5Jr-zs-664"/>
+                                    <constraint firstItem="MhI-jx-uEv" firstAttribute="centerY" secondItem="gJg-Zx-Rjk" secondAttribute="centerY" id="azp-xr-62Y"/>
+                                    <constraint firstAttribute="height" constant="128" id="hIG-fS-9dI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooe-M7-QSF">
+                                <rect key="frame" x="77" y="706.66666666666663" width="276" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Run Spring Animation"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="runCoreAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rGB-fp-rk7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PJj-KK-GeI" secondAttribute="trailing" constant="77" id="602-Hz-iGf"/>
+                            <constraint firstItem="ooe-M7-QSF" firstAttribute="width" secondItem="kwf-Lr-70i" secondAttribute="width" id="Fh1-2k-PVl"/>
                             <constraint firstItem="PJj-KK-GeI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="H5b-ZB-mNQ"/>
+                            <constraint firstItem="gJg-Zx-Rjk" firstAttribute="top" secondItem="PJj-KK-GeI" secondAttribute="bottom" constant="40" id="HIR-7c-726"/>
+                            <constraint firstItem="ooe-M7-QSF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Osb-76-SFe"/>
+                            <constraint firstItem="ooe-M7-QSF" firstAttribute="top" secondItem="kwf-Lr-70i" secondAttribute="bottom" constant="33.329999999999998" id="Qjy-W2-3oc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gJg-Zx-Rjk" secondAttribute="trailing" constant="77" id="dzZ-LC-gAl"/>
                             <constraint firstItem="PJj-KK-GeI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="njS-37-ao2"/>
+                            <constraint firstItem="gJg-Zx-Rjk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="png-GR-Cm3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kwf-Lr-70i" secondAttribute="bottom" multiplier="4:3" id="pzr-xc-8us"/>
                             <constraint firstItem="kwf-Lr-70i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qQo-40-afb"/>
                             <constraint firstItem="kwf-Lr-70i" firstAttribute="width" secondItem="PJj-KK-GeI" secondAttribute="width" multiplier="1:1" id="yHl-MG-Ha1"/>
@@ -81,6 +125,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
